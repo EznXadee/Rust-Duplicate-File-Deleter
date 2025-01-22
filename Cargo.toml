@@ -1,0 +1,11 @@
+[package]
+name = "Duplicate_file_Deleter"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+walkdir = "2.3"    # For traversing directories
+sha2 = "0.10"       # For hashing files to detect duplicates
+reqwest = "0.11"    # For interacting with the CMS via API
+clap = "4.0"        # Updated version for command-line argument parsing
+tokio = { version = "1", features = ["full"] }  # For asynchronous code (reqwest uses tokio)
